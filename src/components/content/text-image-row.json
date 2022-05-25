@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_content_text_image_rows",
+  "info": {
+    "displayName": "Text Image Row",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Orientation": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right"
+    }
+  }
+}
