@@ -4,8 +4,10 @@ Website for my wife's book- Simple Ideas for Fun.
 ## Local Development
 
 1. Clone this repo.
-2. Copy the env.example files in both the frontend and backend directories to a new .env file. Add config options as needed.
-3. Open a new terminal, run the following commands to install dependencies and start the local backend server in development.
+2. Copy the env.example file in the backend directory to a new .env file. 
+3. Add config options as needed. 
+-- Specifically, add at a minimum APP_KEYS. You can set these to any string.
+5. Open a new terminal, run the following commands to install dependencies and start the local backend server in development.
   ```bash
   cd backend
   yarn 
