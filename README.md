@@ -25,6 +25,7 @@ Website for my wife's book- Simple Ideas for Fun.
 ### Frontend
 
 - React/ NextJS
+- JavaScript/ TypeScript
 - TailwindCSS
 
 ### Backend
