@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 
-function NavbarSection() {
+const NavbarSection = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
       <div className="w-full h-full">
         <nav className="lg:hidden relative z-50">
-          <div className="flex py-2 justify-between items-center px-4">
+          <div className="flex py-2 justify-between items-center px-6">
             <div>
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg1.svg"
-                alt="logo"
-              />
+              <img src="/logo-black.png" alt="logo" className="w-16 py-4" />
             </div>
             <div className="visible flex items-center">
               <button
@@ -40,10 +37,7 @@ function NavbarSection() {
                     <span className="font-bold">Home</span>
                   </a>
                 </li>
-                <li
-                  className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none"
-                  onclick="dropdownHandler(this)"
-                >
+                <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
                   <a
                     href="javascript: void(0)"
                     className="ml-2 focus:outline-none focus:ring-2 focus:ring-black"
@@ -59,10 +53,7 @@ function NavbarSection() {
                     <span className="font-bold">Pricing</span>
                   </a>
                 </li>
-                <li
-                  className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none"
-                  onclick="dropdownHandler(this)"
-                >
+                <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
                   <a
                     href="javascript: void(0)"
                     className="ml-2 focus:outline-none focus:ring-2 focus:ring-black"
@@ -70,10 +61,7 @@ function NavbarSection() {
                     <span className="font-bold">Resources</span>
                   </a>
                 </li>
-                <li
-                  className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none"
-                  onclick="dropdownHandler(this)"
-                >
+                <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
                   <a
                     href="javascript: void(0)"
                     className="ml-2 focus:outline-none focus:ring-2 focus:ring-black"
@@ -177,6 +165,6 @@ function NavbarSection() {
         } `}</style>
     </>
   );
-}
+};
 
 export default NavbarSection;

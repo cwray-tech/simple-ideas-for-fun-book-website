@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import NavbarSection from "./Navbar";
+import NavbarSection from "../Navigation/Navbar";
 
 type Props = {
   title?: string;
 };
 
-function HeroSection({ title = "This is the default title" }: Props) {
+function HeroSection({ title = "Simple Ideas for Fun" }: Props) {
   const [menu, setMenu] = useState(false);
 
   return (
@@ -16,7 +16,7 @@ function HeroSection({ title = "This is the default title" }: Props) {
           <img
             className="absolute bg-cover bg-center w-full h-full inset-0"
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Hero%2008.png"
-            alt
+            alt="decoration"
           />
         </div>
         <div className="relative px-4 xl:px-0 container mx-auto md:flex items-center gap-8">
