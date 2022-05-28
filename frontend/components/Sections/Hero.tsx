@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavbarSection from "../Navigation/Navbar";
 
 type Props = {
@@ -6,8 +6,6 @@ type Props = {
 };
 
 function HeroSection({ title = "Simple Ideas for Fun" }: Props) {
-  const [menu, setMenu] = useState(false);
-
   return (
     <>
       <div className="relative w-full h-full pb-10">
