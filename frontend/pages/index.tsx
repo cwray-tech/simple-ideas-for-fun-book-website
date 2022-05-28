@@ -1,15 +1,8 @@
 import Link from "next/link";
+import HeroSection from "../components/Hero";
 import Layout from "../components/Layout";
+import NavbarSection from "../components/Navbar";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1 className="text-3xl">Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-);
+const IndexPage = () => <Layout title="Simple Ideas for Fun"></Layout>;
 
 export default IndexPage;
