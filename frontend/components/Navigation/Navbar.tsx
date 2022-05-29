@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import NavButton from "./Navbutton";
-import NavlinkComponent from "./Navlink";
+import NavButton from "./NavButton";
+import NavlinkComponent from "./NavLink";
 
 const NavbarSection = () => {
   const [menu, setMenu] = useState(false);
@@ -25,20 +25,20 @@ const NavbarSection = () => {
                   alt="menu"
                 />
               </button>
-              <ul
+              <div
                 id="list"
                 className={` ${
                   menu ? "" : "hidden"
                 } p-6 border-r bg-white absolute rounded top-0 left-0 right-0 shadow m-4 mt-24`}
               >
-                <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                <div className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
                   <NavlinkComponent href="/">Home</NavlinkComponent>
-                </li>
+                </div>
 
                 <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
-                  <NavlinkComponent href="/">Order Now</NavlinkComponent>
+                  <NavButton href="/">Order Now</NavButton>
                 </li>
-              </ul>
+              </div>
               <div className="xl:hidden">
                 <button
                   id="close"
@@ -64,7 +64,7 @@ const NavbarSection = () => {
             <div className="flex items-center text-white text-base font-medium">
               <ul className="flex items-center pr-3 xl:pr-12">
                 <li className="cursor-pointer hover:text-gray-300 ease-in">
-                  <NavlinkComponent>Simple Ideas</NavlinkComponent>
+                  <NavlinkComponent href="/">Simple Ideas</NavlinkComponent>
                 </li>
               </ul>
               <NavButton href="/">Order Now</NavButton>

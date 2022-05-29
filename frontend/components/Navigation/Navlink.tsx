@@ -8,12 +8,12 @@ type Props = {
 const NavlinkComponent = ({ children, href = "/" }: Props) => {
   return (
     <>
-      <Link
+      <a
         href={href}
         className="ml-2 focus:outline-none focus:ring-2 focus:ring-black"
       >
         <span className="font-bold">{children}</span>
-      </Link>
+      </a>
     </>
   );
 };
